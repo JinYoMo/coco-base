@@ -1,0 +1,55 @@
+@import './element-variables';
+$themeColor:$--color-primary;
+// Header
+$headerColor:$themeColor;
+$headerText:#ffffff;
+$dropDownText: #fff;
+$headerHeight: 56px;
+// tagsView
+$breadcrumbHeight: 48px;
+$tagsViewHeight: 30px;
+$tagsViewActiveBg:#66b1ff;
+//sidebar
+$menuText:#333333;
+$subMenuText:#333333;
+$menuActiveText:$themeColor;
+$subMenuActiveText:$themeColor; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#f4f4f4;
+$menuHover:#f4f4f4;
+$menuHoverText:$themeColor;
+
+$subMenuBg:#f4f4f4;
+$subMenuHover:#f4f4f4;
+$subMenuHoverText:$themeColor;
+$sideBarWidth: 208px;
+
+// table
+$tableTitleHeight:46px;
+$tableTitleColor:#fff;
+$tableTitleText:#606266;
+
+// the :export directive is the magic sauce for webpack
+:export {
+  themeColor: $themeColor;
+  headerColor: headerColor;
+  headerText: headerText;
+  dropDownText:$dropDownText;
+  headerHeight:$headerHeight;
+  breadcrumbHeight:$breadcrumbHeight;
+  tagsViewHeight:$tagsViewHeight;
+  menuText: $menuText;
+  subMenuText: $subMenuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  menuHoverText:$menuHoverText;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  subMenuHoverText:$subMenuHoverText;
+  sideBarWidth: $sideBarWidth;
+  tableTitleHeight:$tableTitleHeight;
+  tableTitleColor:$tableTitleColor;
+  tabelTitleText:$tableTitleText;
+}

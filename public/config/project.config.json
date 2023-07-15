@@ -1,0 +1,12 @@
+{
+  "title": "后台管理系统",
+  "subtitle": "",
+  "theme":"blue",
+  // fjk-edit
+  "baseUrl": "http://localhost/",  // http://111.198.10.15:11410/"
+  "mainPage": "http://localhost/dcms/#",  // http://111.198.10.15:11404/dcms/#
+  "singleSys": true,
+  "provinceCode":"360000",
+  "cityCode":"361000",
+  "areaCode":"361024"
+}

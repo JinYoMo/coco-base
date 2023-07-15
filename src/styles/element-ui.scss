@@ -1,0 +1,76 @@
+//to reset element-ui default css
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+// 解决input 填空区占位符的颜色问题
+$placeholder-color:#C0C4CC;
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+  color:$placeholder-color !important;
+}
+input:-moz-placeholder,textarea:-moz-placeholder{
+  color:$placeholder-color !important;
+}
+input::-moz-placeholder,textarea::-moz-placeholder{
+  color:$placeholder-color !important;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{
+  color:$placeholder-color !important;
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  //transform: none;
+  //left: 0;
+  //position: relative;
+  //margin: 0 auto;
+  //.el-dialog__header {
+  //  background-color:rgb(48, 65, 86);
+  //  //background-color:rgb(47, 91, 114);
+  //  .el-dialog__title{
+  //    color:white;
+  //    font-weight: bold;
+  //  }
+  //}
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// 表格行边距
+.el-table td{
+  padding: 7px 0px
+}
+
+//button mini边距
+.el-button--mini{
+  padding:5px 7px;
+}
+.el-button+.el-button {
+  margin-left:3px;
+}
+.el-range-separator{
+  width: 7% !important;
+}
+// 悬停弹框设置最大宽度
+.el-tooltip__popper{
+  max-width: 200px !important;
+}
+.el-menu-item,.el-submenu__title,.el-submenu .el-menu-item{
+  height:48px;
+  line-height:48px;
+}

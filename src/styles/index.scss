@@ -1,0 +1,160 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './element-variables';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+// 去掉IE 的密码眼睛
+input::-ms-reveal {
+  display: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+
+.app-container {
+  height:100%;
+  min-height: calc(100vh - 158px);
+  //border:10px solid #ebebeb;
+}
+
+.app-header{
+  height:$headerHeight !important;
+  background-color:$headerColor;
+  width: 100%;
+  position:fixed;
+  //box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .3);
+  color:$headerText;
+  .dropdown-container{
+    height: $headerHeight;
+    .dropdown-wrapper{
+      color:$dropDownText;
+    }
+  }
+}
+.navbar,.navbar .hamburger-container, .el-breadcrumb, .app-breadcrumb .el-breadcrumb {
+  height:$breadcrumbHeight !important;
+  line-height: $breadcrumbHeight !important;
+}
+
+.tags-view-container {
+  .tags-view-wrapper {
+    .tags-view-item{
+      &.active {
+        background-color: $tagsViewActiveBg !important;
+        color: #fff !important;
+        border-color: $tagsViewActiveBg !important;
+      }
+    }
+  }
+}
+.no-head-scrollbar, has-head-scrollbar{
+  .el-scrollbar__wrap{
+    overflow-x: hidden;
+    padding: 10px;
+    background-color: #ebebeb;
+  }
+}
+.no-head-scrollbar{
+  //height: calc(100vh - 138px);
+}
+
+.app-body{
+  width: 100%;
+  position:fixed;
+  margin-top:$headerHeight;
+}
+.el-main{
+  padding:0px;
+  //height: calc(100vh - $headerHeight);
+}
+.imgBox img{
+  max-height: 400px !important;
+  max-width:700px !important;
+  margin: 0px auto;
+}
+
+.table-container{
+  background-color: $tableTitleColor !important;
+  border-top: 12px solid #ebebeb !important;
+  .table-title{
+    background-color:#fff;
+    height: $tableTitleHeight;
+    .title-header{
+      line-height:$tableTitleHeight;
+      color: $tableTitleText;
+      i{
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.el-table td{
+  padding: 4px 0px !important;
+}
